@@ -10,7 +10,6 @@ p{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: aqua;
 }
 
 .header-container{
@@ -78,8 +77,6 @@ p{
     color: rgb(87, 88, 93);
     margin: 0 0 24px 0;
 }
-
-/*To Do: set break point*/
 
 .btn-secondary{
     width: 100%;
@@ -239,7 +236,8 @@ p{
 
     .course-text{
         background-color: #fff;
-        padding: 16px;
+        padding: 16px 16px 24px;
+        height: fit-content;
     }
 
     .course-text > p{
