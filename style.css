@@ -1,4 +1,7 @@
-
+p{
+    font-size: 10pt;
+    color: rgb(87, 88, 93);
+}
 
 /*---navbar---*/
 .icon{
@@ -41,7 +44,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        list-style: none;
     }
     
     .nav a{
@@ -53,7 +55,7 @@
 
 /*---banner section---*/
 .banner-container{
-    background-color: rgb(190, 199, 199);
+    background-color: rgb(236, 239, 239);
 }
 
 .banner-img img {
@@ -111,7 +113,7 @@
     display: none;
 }
 
-.info a{
+.info-mobile a{
     text-decoration: none;
 }
 
@@ -123,6 +125,14 @@
 
 .info-text{
     padding: 16px;
+}
+
+.info-text .main-text, p{
+    margin: 8px 0;
+}
+
+.info-desktop{
+    display: none;
 }
 
 /*info-desktop*/
@@ -144,16 +154,49 @@
         object-fit: cover;
     }
 
-    .info{
-        width: 40%;
+    .info-mobile{
+        display: none;
     }
 
-    /*60% 40% + 35% 65%*/
+    .info-desktop{
+        width: 40%;
+        display: inline-block;
+    }
+
+    .info-item{
+        display: flex;
+    }
+
+    .info-item:hover{
+        background-color: rgb(207, 204, 204);
+    }
+
+    .info-img{
+        width: 35%;
+        padding: 16px;
+    }
+    
+    .info-text{
+        width: 65%;
+    }
+
+    .info-text a{
+        text-decoration: none;
+    }
+
+    .main-text a{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .main-text a:hover{
+        color: #000;
+    }
 }
 
 /*---learning section---*/
 .learning-container{
-    margin: 32px 16px;
+    padding: 32px 16px;
 }
 
 .section-header{
@@ -175,7 +218,7 @@
 @media only screen and (min-width:480px) {
     .learning-container{
         padding: 32px 72px;
-        background-color: rgb(190, 199, 199);
+        background-color: rgb(236, 239, 239);
     }
 
     .learning-mobile{
@@ -194,12 +237,8 @@
         padding: 16px;
     }
 
-    .course-text h4{
-        margin: 0 0 16px 0;
-    }
-
-    .course-text p{
-        margin: 8px 0;
+    .course-text > p{
+        padding: 8px 0 0 0;
     }
 
     .course-img img{
@@ -245,21 +284,45 @@
     text-align: center;
 }
 
-.player iframe{
+.player video{
     width: 100%;
     object-fit: cover;
     padding: 0 0 24px;
+}
+
+.exhibit-desktop, .urban{
+    display: none;
 }
 
 /*exhibit desktop*/
 @media only screen and (min-width:480px) {
     .section-exhibit{
         padding: 32px 24px;
+    }
+
+    .exhibit-container{
         display: flex;
     }
 
     .YT{
         width: 60%;
+    }
+
+    .urban{
+        display: inline-block;
+    }
+
+    .exhibit-desktop{
+        width: 40%;
+        display: inline-block;
+    }
+
+    .exhibit-item{
+        display: flex;
+    }
+
+    .exhibit:hover{
+        background-color: rgb(207, 204, 204);
     }
 }
 
@@ -267,3 +330,27 @@
 .footer{
     padding: 16px;
 }
+
+.term{
+    display: none;
+}
+
+@media only screen and (min-width:480px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .term{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .term a{
+        text-decoration: none;
+        margin: 0 16px;   
+    }
+}
+
+
