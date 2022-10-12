@@ -237,7 +237,8 @@ p{
     .course-text{
         background-color: #fff;
         padding: 16px 16px 24px;
-        height: fit-content;
+        /* height: fit-content; */
+        height: calc(100% - 50%);
     }
 
     .course-text > p{
